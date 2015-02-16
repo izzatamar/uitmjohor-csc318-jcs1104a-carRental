@@ -2,5 +2,8 @@
 
 <body>
   <h2>page2</h2>
+  <table>
+    <tr><td>r1c1</td><td>r1c2</td></tr>
+  </table>
 </body>
 </html>
