@@ -1,0 +1,186 @@
+<html>
+	<head>
+
+			
+			<title> XIII Car Rental </title>
+			
+			<center>
+			<h1> XIII CAR RENTAL </h1>
+			<p> <h4> <font face = "Courier New" color = "#ac0606"> "Your Satisfaction Is Our Final Destination" </font> </h4> </p>
+			<p>---------------------------------------------------------------------------------------------------------------------------------------------</p>
+			</center>
+		
+
+				<style>
+
+				th, td {
+					padding: 4px;
+					text-align: center;
+				}
+				table#t01 {
+					width: 100%;    
+					background-color: #323232;
+				}
+				</style>
+				
+				<script>
+
+				
+				function validate()
+				{
+					if(document.arts.name.value == "")
+					{
+						window.alert("Please Enter Name !");
+						document.arts.name.focus();
+						return false;
+					}
+					
+					
+					
+					if( (document.arts.num.value == "") || isNaN(document.arts.num.value))
+					{
+						window.alert("Enter Contact Number !");
+						document.arts.num.focus();
+						return false;
+					
+					}
+					var x = document.arts.email.value;
+					var atpos = x.indexOf("@");
+					var dotpos = x.lastindexOf(".");
+					if((x == " "|| atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length))
+					{
+						window.alert("Please Enter a valid Email ");
+						document.arts.email.focus();
+						return false;
+					}
+					
+					
+						
+					
+					
+					
+				}
+				
+				
+
+		</script>
+				</script>
+				
+			
+				
+		</head>
+
+<body background= "h2.jpg" style= width:100%; height:100%>
+
+
+<table id="t01" >
+  <tr>
+		<th><a href= "aboutUs.html""><font face = "Courier New" color= "white"> About Us </font> </a></th> 	
+		<th> <a href= "home.html"> <font face = "Courier New" color= "white">  Home </font></a></th>
+		<th><th><a href= "cars.html"> <font face = "Courier New" color= "white">   Cars </font></a></th>
+		<th><a href= "bookingForm.html"> <font face = "Courier New" color= "white">  Booking Form </font></a></th>
+		<th><a href= "tnc.html"> <font face = "Courier New" color= "white"> Terms & Conditions </font></a></th>
+</tr>
+</table>
+
+
+<table>
+
+	<h1 align= center><font face= "Orion Pax" color = "#323232"> Feedback Form </fonts> </h1>
+	<br /> <br />
+		<form name= "arts"  onsubmit = "return validate();">	
+
+
+				<legend> <font face = "Courier New" color = "black"> User Detail </legend>
+				====================================================== <br />
+				
+				
+				<table>
+					<tr>
+						<td> Full Name<font color= "red">*</font> </td>
+						<td> : </td>
+						<td> <input type="text" name="name"/> </td>
+					</tr>
+					<tr>
+						<td> Phone Num<font color= "red">*</font> </td>
+						<td> : </td>
+						<td> <input type="text" name="num"/> </td>
+					</tr>
+					
+					<tr>
+						<td> Email<font color= "red">*</font> </td>
+						<td> : </td>
+						<td> 
+						<input type=email name=email />
+						</td>
+					</tr>
+					
+				</table>
+				<br />
+				
+				<input type=radio name= "gender" value= "male" /> Male 
+				<input type=radio name= "gender" value= "fmale" /> Female <br />
+				
+				
+				<br /><br />
+				
+				<legend> <font face = "Courier New" color = "black"> Car Detail </legend>
+====================================================== <br />
+
+		<table>
+			<tr>
+						<th>Car Code </th>
+						<td> : </td>
+						<td>
+							<select name= "car"> <br />
+								<option value= 'a'> C 110 D </option>
+								<option value= 'b'> C 150 D </option>
+								<option value= 'c'> C 230 D </option>
+								<option value= 'd'> N933 </option>
+								<option value= 'e'> JW34 </option>
+							</select>
+						</td>
+			</tr>
+			<tr>
+				<th> Adress To Sent </th>
+				<td> : </td>
+				<td> <textarea type=text name= "address" rows="3" cols = "30" > </textarea>  </td>
+			</tr>
+			
+			<tr>
+				<th> Date Booking </th>
+				<td> : </td>
+				<td> <input type=date name= "book" > </input>  </td>
+			</tr>
+			
+			<tr>
+				<th> Date Return </th>
+				<td> : </td>
+				<td> <input type=date name= "return" > </input>  </td>
+			</tr>
+		</table>
+		
+		<center>
+					<input type=submit id = "submit" />
+					<input type=reset value= "Reset"  />	
+		</center>
+			
+			
+			
+			
+			
+					
+				
+				
+					
+
+		</form>
+
+
+
+</table>
+
+
+	 
+	</body>
+</html>
